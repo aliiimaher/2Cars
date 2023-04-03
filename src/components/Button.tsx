@@ -1,27 +1,51 @@
 import { ReactNode } from "react";
 
 interface Props {
-  children: ReactNode;
+  children?: ReactNode;
   color?: string;
+  cursor?: string;
+  font?: string;
   onClick: () => void;
   icon?: string;
   width?: string;
+  height?: string;
+  margin?: string;
 }
 
 function Button({
   children,
-  color = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full",
+  color = "bg-blue-500 hover:bg-red-700 py-2 px-4 rounded-full place-self-center",
+  cursor = "cursor-pointer",
+  font = "text-white font-bold font-sans text-2xl text-inherit",
   onClick,
-  icon = "../assets/react.svg",
-  width = "4px",
+  icon,
+  width = "w-16",
+  height = "h-16",
+  margin = "m-2",
 }: Props) {
   return (
     <>
-    <div>
-      <button type="button" className={color} onClick={onClick}>
-        {children}
-      </button>
-        <img src={icon} alt="image" />
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <button
+          type="button"
+          className={
+            color +
+            " " +
+            font +
+            " " +
+            cursor +
+            " " +
+            width +
+            " " +
+            height +
+            " " +
+            margin
+          }
+          onClick={onClick}
+        >
+          {children}
+          <img src={icon} alt="image" />
+        </button>
       </div>
     </>
   );
