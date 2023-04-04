@@ -1,7 +1,8 @@
 import Button from "./components/Button";
-import "./App.css";
+import "./App.scss";
 
 import myImage from "./assets/react.svg";
+import MenuPage from "./components/MenuPage";
 
 export default function App() {
   return (
@@ -13,6 +14,8 @@ export default function App() {
         <Button icon={myImage} onClick={() => console.log("I'm here")}></Button>
         <Button icon={myImage} onClick={() => console.log("I'm here")}></Button>
       </div>
+      <hr></hr>
+      <MenuPage />
     </>
   );
 }
