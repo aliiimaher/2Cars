@@ -1,50 +1,32 @@
 import { ReactNode } from "react";
-import "../App.scss";
+import "../styles/components/Button.scss";
 
 interface Props {
   children?: ReactNode;
   color?: string;
-  cursor?: string;
   font?: string;
   onClick: () => void;
   icon?: string;
-  width?: string;
-  height?: string;
   margin?: string;
-  padding?: string;
+  size?: string;
 }
 
 function Button({
   children,
-  color = "bg-blue-500 hover:bg-red-700 py-2 px-4 rounded-full drop-shadow-lg flex items-center justify-center",
-  cursor = "cursor-pointer",
+  color = "bg-blue-500 hover:bg-red-700 py-2 px-4 rounded-full drop-shadow-lg items-center btn",
   font = "text-white font-bold font-sans text-2xl text-inherit",
   onClick,
   icon,
-  width = "w-16",
-  height = "h-16",
+  size = "h-16 w-16",
   margin = "m-2",
-  padding,
 }: Props) {
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className="main-div">
         <button
           type="button"
           className={
-            color +
-            " " +
-            font +
-            " " +
-            cursor +
-            " " +
-            width +
-            " " +
-            height +
-            " " +
-            margin +
-            " " +
-            padding
+            "cursor-pointer " + color + " " + font + " " + size + " " + margin
           }
           onClick={onClick}
         >

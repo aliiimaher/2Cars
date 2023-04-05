@@ -1,5 +1,5 @@
 import Button from "./Button";
-import "../App.scss";
+import "../styles/components/MenuPage.scss";
 import { useState } from "react";
 
 function MenuPage() {
@@ -7,17 +7,14 @@ function MenuPage() {
   const [musicSvg, setMusicSvg] = useState(true);
   return (
     <>
-      <div className="menu-background" style={{ padding: "4rem" }}>
+      <div className="menu-background">
         <h1 className="text-4xl font-bold title car">2CARS</h1>
         <Button
           icon="play-button.svg"
-          width="w-48"
-          height="h-48"
+          size="w-48 h-48"
           onClick={() => console.log("Play Button")}
         ></Button>
-        <div
-          style={{ display: "flex", justifyContent: "center", padding: "4rem" }}
-        >
+        <div className="buttons-list">
           <Button
             icon="star-favorite.svg"
             onClick={() => console.log("Star Button")}
