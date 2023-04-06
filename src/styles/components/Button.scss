@@ -10,9 +10,38 @@
   display: flex;
   justify-content: center;
 }
+.btn-small {
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+}
+.btn-medium {
+  width: 8rem;
+  height: 8rem;
+}
+.btn-large {
+  width: 12rem;
+  height: 12rem;
+}
 
 @media screen and (min-width: 800px) {
   .main-div {
     padding: 2rem;
+  }
+  .myImg {
+    max-height: 136px;
+  }
+  .btn-small {
+    width: 6rem;
+    height: 6rem;
+    padding: 1.25rem;
+  }
+  .btn-medium {
+    width: 10rem;
+    height: 10rem;
+  }
+  .btn-large {
+    width: 14rem;
+    height: 14rem;
   }
 }

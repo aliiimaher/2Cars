@@ -11,7 +11,7 @@ function MenuPage() {
         <h1 className="font-bold car">2CARS</h1>
         <Button
           icon="play-button.svg"
-          size="w-48 h-48"
+          size="btn-large"
           onClick={() => console.log("Play Button")}
         ></Button>
         <div className="buttons-list">

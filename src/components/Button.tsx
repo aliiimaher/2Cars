@@ -13,11 +13,11 @@ interface Props {
 
 function Button({
   children,
-  color = "bg-blue-500 hover:bg-red-700 py-2 px-4 rounded-full drop-shadow-lg items-center btn",
+  color = "bg-blue-500 hover:bg-red-700 rounded-full drop-shadow-lg items-center btn",
   font = "text-white font-bold font-sans text-2xl text-inherit",
   onClick,
   icon,
-  size = "h-16 w-16",
+  size = "btn-small",
   margin = "m-2",
 }: Props) {
   return (
