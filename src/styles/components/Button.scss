@@ -10,3 +10,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (min-width: 800px) {
+  .main-div {
+    padding: 2rem;
+  }
+}

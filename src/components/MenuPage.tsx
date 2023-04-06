@@ -8,7 +8,7 @@ function MenuPage() {
   return (
     <>
       <div className="menu-background">
-        <h1 className="text-4xl font-bold title car">2CARS</h1>
+        <h1 className="font-bold car">2CARS</h1>
         <Button
           icon="play-button.svg"
           size="w-48 h-48"
@@ -34,7 +34,7 @@ function MenuPage() {
             }}
           ></Button>
         </div>
-        <h5 className="text-xs italic title">© 2023 _ Gharaati-Maher</h5>
+        <h5 className="italic title">© 2023 _ Gharaati-Maher</h5>
       </div>
     </>
   );

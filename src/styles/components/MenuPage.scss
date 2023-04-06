@@ -1,24 +1,41 @@
 .menu-background {
   background-color: #5a4effaa;
-  max-width: 430;
-  max-height: 800;
-  width: fit-content;
-  height: fit-content;
+  // max-width: 430;
+  // max-height: 800;
+  // width: fit-content;
+  // height: fit-content;
   margin: auto;
   padding: auto;
 }
 
 .title {
+  font-size: 0.75rem;
   text-align: center;
   padding: 2rem;
 }
 
 .car {
+  font-size: 2rem;
   font-family: fantasy;
+  padding: 2rem;
 }
 
 .buttons-list {
   display: flex;
   justify-content: center;
   padding: 4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-background {
+    // margin: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  .car {
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
 }
