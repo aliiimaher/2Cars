@@ -1,14 +1,15 @@
-.myImg {
+.btn-img {
   max-height: 100px;
   width: auto;
 }
-.main-div {
+.btn-wrapper {
   display: flex;
   justify-content: center;
 }
 .btn {
   display: flex;
   justify-content: center;
+  margin: 0.5rem;
 }
 .btn-small {
   width: 4rem;
@@ -25,10 +26,10 @@
 }
 
 @media screen and (min-width: 800px) {
-  .main-div {
-    padding: 2rem;
+  .btn-wrapper {
+    padding: 1rem;
   }
-  .myImg {
+  .btn-img {
     max-height: 136px;
   }
   .btn-small {

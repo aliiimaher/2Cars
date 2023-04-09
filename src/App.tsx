@@ -4,7 +4,9 @@ import MenuPage from "./components/MenuPage";
 export default function App() {
   return (
     <>
-      <MenuPage />
+      <div className="wrapper">
+        <MenuPage />
+      </div>
     </>
   );
 }

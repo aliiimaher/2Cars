@@ -1,37 +1,50 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import "../styles/components/Button.scss";
 
 interface Props {
   children?: ReactNode;
-  color?: string;
-  font?: string;
   onClick: () => void;
   icon?: string;
-  margin?: string;
-  size?: string;
+  size?: "small" | "medium" | "large";
 }
 
-function Button({
-  children,
-  color = "bg-blue-500 hover:bg-red-700 rounded-full drop-shadow-lg items-center btn",
-  font = "text-white font-bold font-sans text-2xl text-inherit",
-  onClick,
-  icon,
-  size = "btn-small",
-  margin = "m-2",
-}: Props) {
+function Button({ children, onClick, icon, size = "small" }: Props) {
+  const color = "bg-blue-500 hover:bg-red-700";
+  const font = "text-white font-bold font-sans text-2xl text-inherit";
+  const [btnClass, setBtnClass] = useState("btn-small");
+
+  useEffect(() => {
+    generateBtnClass();
+  }, []);
+
+  const generateBtnClass = () => {
+    if (size === "medium") {
+      setBtnClass("btn-medium");
+    } else if (size === "small") {
+      setBtnClass("btn-small");
+    } else {
+      setBtnClass("btn-large");
+    }
+  };
+
   return (
     <>
-      <div className="main-div">
+      <div className="btn-wrapper">
         <button
           type="button"
           className={
-            "cursor-pointer " + color + " " + font + " " + size + " " + margin
+            "rounded-full drop-shadow-lg items-center btn cursor-pointer" +
+            " " +
+            color +
+            " " +
+            font +
+            " " +
+            btnClass
           }
           onClick={onClick}
         >
           {children}
-          <img src={icon} alt="image" className="myImg" />
+          <img src={icon} alt="image" className="btn-img" />
         </button>
       </div>
     </>

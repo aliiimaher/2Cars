@@ -8,10 +8,10 @@ function MenuPage() {
   return (
     <>
       <div className="menu-background">
-        <h1 className="font-bold car">2CARS</h1>
+        <h1 className="font-bold title">2CARS</h1>
         <Button
           icon="play-button.svg"
-          size="btn-large"
+          size="large"
           onClick={() => console.log("Play Button")}
         ></Button>
         <div className="buttons-list">
