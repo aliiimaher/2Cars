@@ -1,0 +1,43 @@
+.menu-background {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+h5.title {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1.title {
+  font-size: 4rem;
+  font-family: fantasy;
+  padding: 1rem;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .car {
+    font-size: 6rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}
