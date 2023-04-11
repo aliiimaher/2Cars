@@ -1,0 +1,46 @@
+.shape-circle {
+  background-color: #0077ff;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.shape-square {
+  background-color: #ac0000;
+  border-color: black;
+  border: 1px solid black;
+}
+
+.shape-triangle {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 24px solid black;
+}
+
+.size-small {
+  height: 24px;
+  width: 24px;
+}
+
+.size-medium {
+  height: 36px;
+  width: 36px;
+  &.shape-triangle {
+    width: 36px;
+    height: 36px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 36px solid black;
+  }
+}
+
+.size-large {
+  height: 48px;
+  width: 48px;
+  &.shape-triangle {
+    width: 48px;
+    height: 48px;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 48px solid black;
+  }
+}
